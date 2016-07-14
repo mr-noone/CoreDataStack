@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name                    = "CoreDataStack"
-  s.version                 = "1.0"
+  s.version                 = "1.0.0"
   s.summary                 = "CoreDataStack"
   s.homepage                = "https://github.com/mr-noone/CoreDataStack"
   s.license                 = { :type => "MIT", :file => "LICENSE" }
