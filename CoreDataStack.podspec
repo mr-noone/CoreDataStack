@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.license                 = { :type => "MIT", :file => "LICENSE" }
   s.author                  = { "Alex Zgurskiy" => "mr.noone@icloud.com" }
   s.platform                = :ios, "8.0"
-  s.source                  = { :git => "https://github.com/mr-noone/CoreDataStack.git", :tag => "1.0" }
+  s.source                  = { :git => "https://github.com/mr-noone/CoreDataStack.git", :tag => "1.0.0" }
   s.source_files            = "Classes/*.{h,m}"
   s.public_header_files     = "Classes/*.h"
   s.frameworks              = "Foundation", "CoreData"
