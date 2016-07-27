@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		005DBD33079DC853C6090775 /* libPods-CoreDataStack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146FDD17E30A37729214F87D /* libPods-CoreDataStack.a */; };
-		FAFBD8991D48F06C001C1052 /* CoreDataStack.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBD8921D48F06C001C1052 /* CoreDataStack.h */; };
-		FAFBD89A1D48F06C001C1052 /* NSManagedObjectContext+FetchHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBD8931D48F06C001C1052 /* NSManagedObjectContext+FetchHelpers.h */; };
+		FAFBD8991D48F06C001C1052 /* CoreDataStack.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBD8921D48F06C001C1052 /* CoreDataStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAFBD89A1D48F06C001C1052 /* NSManagedObjectContext+FetchHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBD8931D48F06C001C1052 /* NSManagedObjectContext+FetchHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAFBD89B1D48F06C001C1052 /* NSManagedObjectContext+FetchHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFBD8941D48F06C001C1052 /* NSManagedObjectContext+FetchHelpers.m */; };
-		FAFBD89C1D48F06C001C1052 /* NSManagedObjectContext+SaveHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBD8951D48F06C001C1052 /* NSManagedObjectContext+SaveHelpers.h */; };
+		FAFBD89C1D48F06C001C1052 /* NSManagedObjectContext+SaveHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBD8951D48F06C001C1052 /* NSManagedObjectContext+SaveHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAFBD89D1D48F06C001C1052 /* NSManagedObjectContext+SaveHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFBD8961D48F06C001C1052 /* NSManagedObjectContext+SaveHelpers.m */; };
-		FAFBD89E1D48F06C001C1052 /* SQLiteStack.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBD8971D48F06C001C1052 /* SQLiteStack.h */; };
+		FAFBD89E1D48F06C001C1052 /* SQLiteStack.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBD8971D48F06C001C1052 /* SQLiteStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAFBD89F1D48F06C001C1052 /* SQLiteStack.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFBD8981D48F06C001C1052 /* SQLiteStack.m */; };
 		FAFBD8A11D48F92D001C1052 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFBD8A01D48F92D001C1052 /* CoreData.framework */; };
 /* End PBXBuildFile section */
@@ -69,9 +69,9 @@
 			isa = PBXGroup;
 			children = (
 				FAFBD8891D48EF1F001C1052 /* CoreDataStack */,
-				FAFBD8881D48EF1F001C1052 /* Products */,
 				25A684123147C771841C7CE3 /* Pods */,
 				C60D226AFCCAB9CBF3AD831E /* Frameworks */,
+				FAFBD8881D48EF1F001C1052 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
