@@ -35,7 +35,7 @@
         [self save:&error];
         
         if (self.parentContext != nil && error == nil)
-            [self.parentContext saveContext:completion];
+            [self.parentContext saveContextToStore:completion];
         else
             main_queue_block(completion, error);
     }];
