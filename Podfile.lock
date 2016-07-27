@@ -1,0 +1,14 @@
+PODS:
+  - macros_blocks (0.0.3):
+    - macros_blocks/core (= 0.0.3)
+  - macros_blocks/core (0.0.3)
+
+DEPENDENCIES:
+  - macros_blocks (~> 0.0.3)
+
+SPEC CHECKSUMS:
+  macros_blocks: fae8dc0d72562dfcbe08caaeafcdc857625d343c
+
+PODFILE CHECKSUM: ad0d61bd79b372d7b35b49bbd2727a24bf35037d
+
+COCOAPODS: 1.0.1

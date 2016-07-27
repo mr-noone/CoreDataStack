@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		005DBD33079DC853C6090775 /* libPods-CoreDataStack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146FDD17E30A37729214F87D /* libPods-CoreDataStack.a */; };
+		FAFBD8991D48F06C001C1052 /* CoreDataStack.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBD8921D48F06C001C1052 /* CoreDataStack.h */; };
+		FAFBD89A1D48F06C001C1052 /* NSManagedObjectContext+FetchHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBD8931D48F06C001C1052 /* NSManagedObjectContext+FetchHelpers.h */; };
+		FAFBD89B1D48F06C001C1052 /* NSManagedObjectContext+FetchHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFBD8941D48F06C001C1052 /* NSManagedObjectContext+FetchHelpers.m */; };
+		FAFBD89C1D48F06C001C1052 /* NSManagedObjectContext+SaveHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBD8951D48F06C001C1052 /* NSManagedObjectContext+SaveHelpers.h */; };
+		FAFBD89D1D48F06C001C1052 /* NSManagedObjectContext+SaveHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFBD8961D48F06C001C1052 /* NSManagedObjectContext+SaveHelpers.m */; };
+		FAFBD89E1D48F06C001C1052 /* SQLiteStack.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFBD8971D48F06C001C1052 /* SQLiteStack.h */; };
+		FAFBD89F1D48F06C001C1052 /* SQLiteStack.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFBD8981D48F06C001C1052 /* SQLiteStack.m */; };
+		FAFBD8A11D48F92D001C1052 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFBD8A01D48F92D001C1052 /* CoreData.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		146FDD17E30A37729214F87D /* libPods-CoreDataStack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreDataStack.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		632BFDA7BDD18B3511109707 /* Pods-CoreDataStack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataStack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataStack/Pods-CoreDataStack.debug.xcconfig"; sourceTree = "<group>"; };
+		E1A65C284973F187D8A31F42 /* Pods-CoreDataStack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataStack.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataStack/Pods-CoreDataStack.release.xcconfig"; sourceTree = "<group>"; };
+		FAFBD8871D48EF1F001C1052 /* CoreDataStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreDataStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFBD88C1D48EF1F001C1052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFBD8921D48F06C001C1052 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		FAFBD8931D48F06C001C1052 /* NSManagedObjectContext+FetchHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+FetchHelpers.h"; sourceTree = "<group>"; };
+		FAFBD8941D48F06C001C1052 /* NSManagedObjectContext+FetchHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+FetchHelpers.m"; sourceTree = "<group>"; };
+		FAFBD8951D48F06C001C1052 /* NSManagedObjectContext+SaveHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+SaveHelpers.h"; sourceTree = "<group>"; };
+		FAFBD8961D48F06C001C1052 /* NSManagedObjectContext+SaveHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+SaveHelpers.m"; sourceTree = "<group>"; };
+		FAFBD8971D48F06C001C1052 /* SQLiteStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteStack.h; sourceTree = "<group>"; };
+		FAFBD8981D48F06C001C1052 /* SQLiteStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteStack.m; sourceTree = "<group>"; };
+		FAFBD8A01D48F92D001C1052 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAFBD8831D48EF1F001C1052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFBD8A11D48F92D001C1052 /* CoreData.framework in Frameworks */,
+				005DBD33079DC853C6090775 /* libPods-CoreDataStack.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25A684123147C771841C7CE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				632BFDA7BDD18B3511109707 /* Pods-CoreDataStack.debug.xcconfig */,
+				E1A65C284973F187D8A31F42 /* Pods-CoreDataStack.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C60D226AFCCAB9CBF3AD831E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAFBD8A01D48F92D001C1052 /* CoreData.framework */,
+				146FDD17E30A37729214F87D /* libPods-CoreDataStack.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAFBD87D1D48EF1F001C1052 = {
+			isa = PBXGroup;
+			children = (
+				FAFBD8891D48EF1F001C1052 /* CoreDataStack */,
+				FAFBD8881D48EF1F001C1052 /* Products */,
+				25A684123147C771841C7CE3 /* Pods */,
+				C60D226AFCCAB9CBF3AD831E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAFBD8881D48EF1F001C1052 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAFBD8871D48EF1F001C1052 /* CoreDataStack.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAFBD8891D48EF1F001C1052 /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				FAFBD8921D48F06C001C1052 /* CoreDataStack.h */,
+				FAFBD8971D48F06C001C1052 /* SQLiteStack.h */,
+				FAFBD8981D48F06C001C1052 /* SQLiteStack.m */,
+				FAFBD8951D48F06C001C1052 /* NSManagedObjectContext+SaveHelpers.h */,
+				FAFBD8961D48F06C001C1052 /* NSManagedObjectContext+SaveHelpers.m */,
+				FAFBD8931D48F06C001C1052 /* NSManagedObjectContext+FetchHelpers.h */,
+				FAFBD8941D48F06C001C1052 /* NSManagedObjectContext+FetchHelpers.m */,
+				FAFBD88C1D48EF1F001C1052 /* Info.plist */,
+			);
+			path = CoreDataStack;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FAFBD8841D48EF1F001C1052 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFBD8991D48F06C001C1052 /* CoreDataStack.h in Headers */,
+				FAFBD89A1D48F06C001C1052 /* NSManagedObjectContext+FetchHelpers.h in Headers */,
+				FAFBD89C1D48F06C001C1052 /* NSManagedObjectContext+SaveHelpers.h in Headers */,
+				FAFBD89E1D48F06C001C1052 /* SQLiteStack.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FAFBD8861D48EF1F001C1052 /* CoreDataStack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFBD88F1D48EF1F001C1052 /* Build configuration list for PBXNativeTarget "CoreDataStack" */;
+			buildPhases = (
+				42CAF74EBC2989A6047C6ACF /* [CP] Check Pods Manifest.lock */,
+				FAFBD8821D48EF1F001C1052 /* Sources */,
+				FAFBD8831D48EF1F001C1052 /* Frameworks */,
+				FAFBD8841D48EF1F001C1052 /* Headers */,
+				FAFBD8851D48EF1F001C1052 /* Resources */,
+				1D0DD8739FFC161F56A3FC37 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreDataStack;
+			productName = CoreDataStack;
+			productReference = FAFBD8871D48EF1F001C1052 /* CoreDataStack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAFBD87E1D48EF1F001C1052 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Alex Zgurskiy";
+				TargetAttributes = {
+					FAFBD8861D48EF1F001C1052 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FAFBD8811D48EF1F001C1052 /* Build configuration list for PBXProject "CoreDataStack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FAFBD87D1D48EF1F001C1052;
+			productRefGroup = FAFBD8881D48EF1F001C1052 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAFBD8861D48EF1F001C1052 /* CoreDataStack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAFBD8851D48EF1F001C1052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D0DD8739FFC161F56A3FC37 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreDataStack/Pods-CoreDataStack-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42CAF74EBC2989A6047C6ACF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAFBD8821D48EF1F001C1052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFBD89D1D48F06C001C1052 /* NSManagedObjectContext+SaveHelpers.m in Sources */,
+				FAFBD89B1D48F06C001C1052 /* NSManagedObjectContext+FetchHelpers.m in Sources */,
+				FAFBD89F1D48F06C001C1052 /* SQLiteStack.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FAFBD88D1D48EF1F001C1052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FAFBD88E1D48EF1F001C1052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FAFBD8901D48EF1F001C1052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 632BFDA7BDD18B3511109707 /* Pods-CoreDataStack.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CoreDataStack/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mr-noone.CoreDataStack";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FAFBD8911D48EF1F001C1052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1A65C284973F187D8A31F42 /* Pods-CoreDataStack.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CoreDataStack/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mr-noone.CoreDataStack";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAFBD8811D48EF1F001C1052 /* Build configuration list for PBXProject "CoreDataStack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFBD88D1D48EF1F001C1052 /* Debug */,
+				FAFBD88E1D48EF1F001C1052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFBD88F1D48EF1F001C1052 /* Build configuration list for PBXNativeTarget "CoreDataStack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFBD8901D48EF1F001C1052 /* Debug */,
+				FAFBD8911D48EF1F001C1052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAFBD87E1D48EF1F001C1052 /* Project object */;
+}
