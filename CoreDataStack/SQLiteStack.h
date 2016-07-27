@@ -12,13 +12,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+extern NSString * const SQLiteStackDidConfiguredNotification;
+
 @interface SQLiteStack : NSObject
 
 + (instancetype)defaultStack;
 - (void)configureStackWithModelName:(NSString *)modelName
                            inBundle:(NSBundle *)bundle
                        withStoreURL:(NSURL *)storeURL
-                     withCompletion:(void(^)(void))completion;
+                     withCompletion:(void(^ _Nullable)(void))completion;
 
 - (NSManagedObjectContext *)privateContext;
 

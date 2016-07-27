@@ -8,11 +8,14 @@
 
 #import "SQLiteStack.h"
 #import <CoreData/CoreData.h>
+#import <macros_blocks/macros_blocks.h>
 
 static NSString * const SQLiteStackModelNotFound = @"Could not find a model with this name.";
 static NSString * const SQLiteStackStoreURLIsNotFolder = @"Store URL should be a folder.";
 static NSString * const SQLiteStackStoreURLNotExist = @"Store URL not exist";
 static NSString * const SQLiteStackIsNotConfigured = @"Database stack is not configured";
+
+NSString * const SQLiteStackDidConfiguredNotification = @"SQLiteStackDidConfiguredNotification";
 
 @interface SQLiteStack ()
 
@@ -41,7 +44,11 @@ static NSString * const SQLiteStackIsNotConfigured = @"Database stack is not con
 
 #pragma mark Configure methods
 
-- (void)configureStackWithModelName:(NSString *)modelName inBundle:(NSBundle *)bundle withStoreURL:(NSURL *)storeURL withCompletion:(nonnull void (^)(void))completion {
+- (void)configureStackWithModelName:(NSString *)modelName
+                           inBundle:(NSBundle *)bundle
+                       withStoreURL:(NSURL *)storeURL
+                     withCompletion:(void (^ _Nullable)(void))completion {
+    
     BOOL isDirectory;
     BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:storeURL.relativePath isDirectory:&isDirectory];
     BOOL modelExists = [bundle URLForResource:modelName withExtension:@"momd"] != nil;
@@ -70,7 +77,9 @@ static NSString * const SQLiteStackIsNotConfigured = @"Database stack is not con
         
         dispatch_async(dispatch_get_main_queue(), ^{
             NSAssert(error == nil, @"%@", error);
-            completion();
+            
+            [[NSNotificationCenter defaultCenter] postNotificationName:SQLiteStackDidConfiguredNotification object:self];
+            safe_block(completion);
         });
     });
 }
