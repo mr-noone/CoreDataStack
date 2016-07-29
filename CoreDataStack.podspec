@@ -8,15 +8,15 @@
 
 Pod::Spec.new do |s|
   s.name                    = "CoreDataStack"
-  s.version                 = "1.0.0"
+  s.version                 = "1.0.1"
   s.summary                 = "CoreDataStack"
   s.homepage                = "https://github.com/mr-noone/CoreDataStack"
   s.license                 = { :type => "MIT", :file => "LICENSE" }
   s.author                  = { "Alex Zgurskiy" => "mr.noone@icloud.com" }
   s.platform                = :ios, "8.0"
-  s.source                  = { :git => "https://github.com/mr-noone/CoreDataStack.git", :tag => "1.0.0" }
-  s.source_files            = "Classes/*.{h,m}"
-  s.public_header_files     = "Classes/*.h"
+  s.source                  = { :git => "https://github.com/mr-noone/CoreDataStack.git", :tag => "1.0.1" }
+  s.source_files            = "CoreDataStack/*.{h,m}"
+  s.public_header_files     = "CoreDataStack/*.h"
   s.frameworks              = "Foundation", "CoreData"
   s.requires_arc            = true
 
