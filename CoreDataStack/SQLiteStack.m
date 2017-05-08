@@ -50,8 +50,8 @@ NSString * const SQLiteStackDidConfiguredNotification = @"SQLiteStackDidConfigur
                      withCompletion:(void (^ _Nullable)(void))completion {
     
     BOOL isDirectory;
-    BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:storeURL.relativePath isDirectory:&isDirectory];
-    BOOL modelExists = [bundle URLForResource:modelName withExtension:@"momd"] != nil;
+    __unused BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:storeURL.relativePath isDirectory:&isDirectory];
+    __unused BOOL modelExists = [bundle URLForResource:modelName withExtension:@"momd"] != nil;
     
     NSAssert(modelExists == YES, SQLiteStackModelNotFound);
     NSAssert(fileExists == YES, SQLiteStackStoreURLNotExist);

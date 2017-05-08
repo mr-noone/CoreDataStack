@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+@class NSManagedObjectModel;
 @class NSManagedObjectContext;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -22,9 +23,10 @@ extern NSString * const SQLiteStackDidConfiguredNotification;
                        withStoreURL:(NSURL *)storeURL
                      withCompletion:(void(^ _Nullable)(void))completion;
 
-- (NSManagedObjectContext *)privateContext;
-
+@property (strong, nonatomic, readonly) NSManagedObjectModel *objectModel;
 @property (strong, nonatomic, readonly) NSManagedObjectContext *mainContext;
+
+- (NSManagedObjectContext *)privateContext;
 
 @end
 
